@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class DataDisplayActivity extends AppCompatActivity {
 
     CRACustomer customer;
@@ -114,6 +117,9 @@ public class DataDisplayActivity extends AppCompatActivity {
         //CALCULATE Tax Paid
         double taxpaid = calculateTaxPaid();
         lbl_taxPaid.setText("Total tax Paid:\t" + taxpaid);
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("dd/MM/yyyy");
+        Date todayDate = new Date();
 
 
     }
