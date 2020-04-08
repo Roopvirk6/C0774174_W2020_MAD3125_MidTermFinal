@@ -83,6 +83,15 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         rrsp = customer.getRrsp_contribution();
         double maximumRRSP = (grossIncome * 0.18);
+        if (rrsp > maximumRRSP)
+        {
+
+        }
+        else
+        {
+            
+        }
+
 
 
 
