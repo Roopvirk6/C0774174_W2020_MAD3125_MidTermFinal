@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         rgGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.radioButton1){
+                    Gender_selected = rb_male.getText().toString();
 
             }
 
