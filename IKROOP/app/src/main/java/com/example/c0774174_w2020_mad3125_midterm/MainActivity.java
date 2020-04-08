@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
                     btn_submit.setClickable(false);
                 } else
                     {
+                        Double grossIncome = Double.parseDouble(gross_income.getText().toString());
+                        Double rrsp = Double.parseDouble(rrsp_contribution.getText().toString());
                         CRACustomer customer = new CRACustomer(edt_sin.getText().toString(),
                                 edtFname.getText().toString(),
                                 edtLname.getText().toString(),
@@ -111,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
 
 
 }
