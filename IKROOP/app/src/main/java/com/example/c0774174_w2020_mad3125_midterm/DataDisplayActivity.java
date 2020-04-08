@@ -129,7 +129,21 @@ public class DataDisplayActivity extends AppCompatActivity {
         else if (temp >= 12069.00)
         {
             federalTax = (temp * 0.15);
-            temp = temp - 35561;
+            temp = temp - 35561.00;
+        }
+        else if (temp >= 47630.01)
+        {
+            federalTax = (temp * 0.205);
+            temp = temp - 47629.00;
+        }
+        else if (temp >= 95259.01)
+        {
+            federalTax = (temp * 0.26);
+            temp = temp - 52407.99;
+        }
+        else if (temp >= 147667.01)
+        {
+            federalTax = (temp)
         }
 
     }
