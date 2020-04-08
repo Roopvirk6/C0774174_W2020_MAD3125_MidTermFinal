@@ -62,8 +62,10 @@ public class DataDisplayActivity extends AppCompatActivity {
         {
             cpp = (grossIncome * 0.051);
         }
-       
+
         lbl_cpp.setText("CPP Contribution in Year:\t" + cpp);
+
+
 
 
 

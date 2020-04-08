@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                             calendar.get(Calendar.DAY_OF_MONTH)).show();
                 }
             });
+
         rgGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
