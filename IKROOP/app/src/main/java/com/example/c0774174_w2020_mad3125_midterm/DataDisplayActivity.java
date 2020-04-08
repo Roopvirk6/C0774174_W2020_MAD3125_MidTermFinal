@@ -52,5 +52,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         lbl_RrspContributed.setText("RRSP Contributed: \t" + customer.getRrsp_contribution());
         rrsp = customer.getRrsp_contribution();
 
+        double grossIncome = customer.getGross_income();
+
     }
 }
