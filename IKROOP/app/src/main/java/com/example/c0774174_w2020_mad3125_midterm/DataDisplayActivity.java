@@ -65,6 +65,17 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         lbl_cpp.setText("CPP Contribution in Year:\t" + cpp);
 
+        if (grossIncome > 53100.00)
+        {
+            emp_Insurance = (53100.00 * 0.0162);
+        }
+        else
+        {
+
+        }
+
+
+
 
 
 
