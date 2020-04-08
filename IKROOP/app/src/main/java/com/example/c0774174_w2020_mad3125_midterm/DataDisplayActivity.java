@@ -103,6 +103,16 @@ public class DataDisplayActivity extends AppCompatActivity {
         totalTaxableAmount = grossIncome - (cpp + emp_Insurance + rrsp);
         lbl_taxableIncome.setText("Taxable income:\t" + (double) totalTaxableAmount);
 
+        //Calculate FEDERAL TAX
+        double calculateFederal = calcFedralTax();
+        txt_federal_tax.setText("Federal Tax: \t" + calculateFederal);
+
+        //CALCULATE PROVISIONAL TAX
+        double calculateProvisional = calculateProvsional();
+        txt_provincialTax.setText("Provisional Tax: \t" + calculateProvisional);
+
+        
+
 
 
 
