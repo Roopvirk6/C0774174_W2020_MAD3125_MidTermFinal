@@ -157,7 +157,22 @@ public class DataDisplayActivity extends AppCompatActivity {
 
     public double calculateProvsional()
     {
-        
+        double temp = totalTaxableAmount;
+        if (temp <= 10582.01)
+        {
+            provincialTax = 0;
+            temp = totalTaxableAmount - 10582.00;
+        }
+        if (temp >= 10582.01)
+        {
+            provincialTax = (temp * 0.0505);
+            temp = temp - 33323.99;
+        }
+        if (temp >= 43906.00)
+        {
+            provincialTax = (temp * 0.0915);
+            
+        }
 
     }
 
