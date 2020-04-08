@@ -81,9 +81,15 @@ public class MainActivity extends AppCompatActivity {
                 else if(checkedId == R.id.radioButton2){
                     Gender_selected  = rb_female.getText().toString();
                 }
-                
-
+                else {
+                    Gender_selected = rb_others.getText().toString();
+                }
             }
+
+        });
+
+
+
 
 
 
