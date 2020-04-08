@@ -43,6 +43,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         txt_provincialTax = findViewById(R.id.txt_provincialTax);
         lbl_taxPaid = findViewById(R.id.txt_taxPayed);
         lbl_TaxFilingDate = findViewById(R.id.txt_taxFilingDate);
+        lblAge = findViewById(R.id.txt_age);
 
         Intent mIntent = getIntent();
         CRACustomer customer = mIntent.getParcelableExtra("User_Data");
