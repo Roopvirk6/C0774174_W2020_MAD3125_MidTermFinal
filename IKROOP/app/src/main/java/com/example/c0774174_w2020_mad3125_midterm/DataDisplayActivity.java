@@ -16,7 +16,7 @@ public class DataDisplayActivity extends AppCompatActivity {
     TextView txt_sin;
     TextView txt_full_Name;
     TextView txt_gender;
-    TextView txt_gross_income, txt_taxDate, txt_federal_tax, txt_provincialTax, lbl_cpp, lbl_empInsurance,
+    TextView txt_gross_income, txt_federal_tax, txt_provincialTax, lbl_cpp, lbl_empInsurance,
             lbl_RrspContributed, lbl_Cf_RRSP,
             lbl_taxableIncome, lbl_taxPaid, lbl_TaxFilingDate;
     double cpp = 0;
