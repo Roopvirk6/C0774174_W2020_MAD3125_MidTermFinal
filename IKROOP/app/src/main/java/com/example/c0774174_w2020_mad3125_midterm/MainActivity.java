@@ -20,11 +20,11 @@ import static com.example.c0774174_w2020_mad3125_midterm.R.id.btnSubmit;
 public class MainActivity extends AppCompatActivity {
 
  TextView textView2;
- TextInputEditText edt_fname;
- TextInputEditText edt_lname;
+ TextInputEditText edtFname;
+ TextInputEditText edtLname;
     String Gender_selected;
     TextView txt_date;
-    RadioGroup rg_gender;
+    RadioGroup rgGender;
     RadioButton rb_male;
     RadioButton rb_female;
     RadioButton rb_others;
@@ -42,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txt_date= (TextView)findViewById(R.id.txtDate);
-        rg_gender= (RadioGroup)findViewById(R.id.btnRadioGroup);
+        rgGender= (RadioGroup)findViewById(R.id.btnRadioGroup);
         rb_male=(RadioButton)findViewById(R.id.radioButton1);
         rb_female=(RadioButton)findViewById(R.id.radioButton2);
         rb_others=(RadioButton)findViewById(R.id.radioButton3);
-        edt_fname = (TextInputEditText)findViewById(R.id.editText1);
-        edt_lname = (TextInputEditText)findViewById(R.id.editText2);
+        edtFname = (TextInputEditText)findViewById(R.id.editText1);
+        edtLname = (TextInputEditText)findViewById(R.id.editText2);
         edt_sin = (TextInputEditText)findViewById(R.id.editText3);
         gross_income = (TextInputEditText)findViewById(R.id.editText4);
         rrsp_contribution = (TextInputEditText)findViewById(R.id.editText5);
@@ -59,8 +59,20 @@ public class MainActivity extends AppCompatActivity {
                 calendar.set(Calendar.YEAR, year);
                 calendar.set(Calendar.MONTH, monthOfYear);
                 calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                dateFormatDOB();
-            };
+                //dateFormatDOB();
+            }
+        };
+
+            txt_date.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    new DatePickerDialog(MainActivity.this, t_date, calendar
+                            .get(Calendar.YEAR), calendar.get(Calendar.MONTH),
+                            calendar.get(Calendar.DAY_OF_MONTH)).show();
+                }
+            });
+
 
 
 
