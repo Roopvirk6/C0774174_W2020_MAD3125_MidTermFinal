@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 import static com.example.c0774174_w2020_mad3125_midterm.R.id.btnSubmit;
@@ -115,8 +116,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 }
-    private String dateFormat() {
-        
+    private String dateFormat()
+    {
+        LocalDate l1 = LocalDate.of(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+        LocalDate now = LocalDate.now();
+
     }
 
 
