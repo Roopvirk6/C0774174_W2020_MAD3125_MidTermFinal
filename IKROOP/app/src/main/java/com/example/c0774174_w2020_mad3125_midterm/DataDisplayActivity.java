@@ -104,23 +104,32 @@ public class DataDisplayActivity extends AppCompatActivity {
         lbl_taxableIncome.setText("Taxable income:\t" + (double) totalTaxableAmount);
 
         //Calculate FEDERAL TAX
-        double calculateFederal = calcFedralTax();
+        double calculateFederal = calculateFederalTax();
         txt_federal_tax.setText("Federal Tax: \t" + calculateFederal);
 
         //CALCULATE PROVISIONAL TAX
         double calculateProvisional = calculateProvsional();
         txt_provincialTax.setText("Provisional Tax: \t" + calculateProvisional);
 
-        
+        //CALCULATE Tax Paid
+        double taxpaid = calculateTaxPaid();
+        lbl_taxPaid.setText("Total tax Paid:\t" + taxpaid);
 
 
+    }
 
+    public double calculateFederalTax()
+    {
 
+    }
 
+    public double calculateProvsional()
+    {
 
+    }
 
-
-
+    public double calculateTaxPaid()
+    {
 
     }
 }
