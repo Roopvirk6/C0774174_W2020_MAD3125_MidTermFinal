@@ -51,13 +51,14 @@ public class MainActivity extends AppCompatActivity {
         edt_sin = (TextInputEditText)findViewById(R.id.editText3);
         gross_income = (TextInputEditText)findViewById(R.id.editText4);
         rrsp_contribution = (TextInputEditText)findViewById(R.id.editText5);
-        
+
         final DatePickerDialog.OnDateSetListener t_date = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
                                   int dayOfMonth) {
                 calendar.set(Calendar.YEAR, year);
                 calendar.set(Calendar.MONTH, monthOfYear);
+                calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
             };
 
 
