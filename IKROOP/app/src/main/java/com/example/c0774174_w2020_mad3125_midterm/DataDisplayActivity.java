@@ -2,6 +2,7 @@ package com.example.c0774174_w2020_mad3125_midterm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -41,5 +42,8 @@ public class DataDisplayActivity extends AppCompatActivity {
         txt_provincialTax = findViewById(R.id.txt_provincialTax);
         lbl_taxPaid = findViewById(R.id.txt_taxPayed);
         lbl_TaxFilingDate = findViewById(R.id.txt_taxFilingDate);
+
+        Intent mIntent = getIntent();
+        CRACustomer customer = mIntent.getParcelableExtra("User_Data");
     }
 }
