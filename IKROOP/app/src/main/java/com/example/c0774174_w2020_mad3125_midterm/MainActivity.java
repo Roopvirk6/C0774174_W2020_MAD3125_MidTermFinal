@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        textView2 = (TextView)findViewById(R.id.textView2);
         txt_date= (TextView)findViewById(R.id.txtDate);
         rgGender= (RadioGroup)findViewById(R.id.btnRadioGroup);
         rb_male=(RadioButton)findViewById(R.id.radioButton1);

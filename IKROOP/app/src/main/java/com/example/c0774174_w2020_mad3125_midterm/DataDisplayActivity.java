@@ -47,6 +47,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         lbl_taxPaid = findViewById(R.id.txt_taxPayed);
         lbl_TaxFilingDate = findViewById(R.id.txt_taxFilingDate);
         lblAge = findViewById(R.id.txt_age);
+        lblAge.setText(" Age : " + customer.dob);
 
         Intent mIntent = getIntent();
         CRACustomer customer = mIntent.getParcelableExtra("User_Data");
@@ -122,7 +123,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         Date todayDate = new Date();
         String thisDate = currentDate.format(todayDate);
         lbl_TaxFilingDate.setText("Tax Filing Date: " + thisDate);
-        
+
 
 
 
