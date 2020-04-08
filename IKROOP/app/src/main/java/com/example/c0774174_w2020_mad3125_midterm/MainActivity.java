@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
         txt_date.setText(sdf.format(calendar.getTime()));
     }
-    
+
 }
 
 
