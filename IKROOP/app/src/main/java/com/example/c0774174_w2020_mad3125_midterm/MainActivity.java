@@ -114,6 +114,15 @@ public class MainActivity extends AppCompatActivity {
                                 edtFname.getText().toString(),
                                 edtLname.getText().toString(),
                                 Gender_selected, grossIncome, rrsp, age);
+                        String sin = edt_sin.getText().toString();
+                        String fName = edtFname.getText().toString();
+                        String lName = edtLname.getText().toString();
+                        customer.setSin_number(sin);
+                        customer.setFirst_name(fName);
+                        customer.setLast_name(lName);
+                        customer.setGender(Gender_selected);
+                        customer.setGross_income(grossIncome);
+                        customer.setRrsp_contribution(rrsp);
 
 
                     Intent intent = new Intent(MainActivity.this, DataDisplayActivity.class);
