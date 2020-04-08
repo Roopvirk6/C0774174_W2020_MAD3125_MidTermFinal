@@ -85,7 +85,7 @@ public class CRACustomer implements Parcelable {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    
+
 
     @Override
     public int describeContents() {
