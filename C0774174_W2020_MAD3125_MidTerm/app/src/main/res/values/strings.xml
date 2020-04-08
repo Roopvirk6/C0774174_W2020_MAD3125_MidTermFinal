@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">C0774174_W2020_MAD3125_MidTerm</string>
+    <string name="SplashActivity">C0774174 IKROOP VIRK</string>
+    <string name="TxtView">Enter Details</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="dob">Select Date Of Birth</string>
+    <string name="SIN">Personal sin</string>
+    <string name="grossincome">gross income</string>
+    <string name="rrsp">RRSP</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <string name="Submit">Submit</string>
+    <string name="Clear">Clear</string>
+</resources>
