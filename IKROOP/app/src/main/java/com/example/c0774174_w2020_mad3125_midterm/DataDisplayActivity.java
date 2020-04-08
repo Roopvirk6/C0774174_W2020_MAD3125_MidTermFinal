@@ -121,6 +121,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         SimpleDateFormat currentDate = new SimpleDateFormat("dd/MM/yyyy");
         Date todayDate = new Date();
         String thisDate = currentDate.format(todayDate);
+        lbl_TaxFilingDate.setText("Tax Filing Date: " + thisDate);
 
 
     }
