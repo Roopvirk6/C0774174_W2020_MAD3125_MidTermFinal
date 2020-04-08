@@ -85,17 +85,7 @@ public class CRACustomer implements Parcelable {
     public void setGender(String gender) {
         this.gender = gender;
     }
-
-
-
-    public String amountFormatter()
-    {
-        NumberFormat nf = NumberFormat.getInstance(new Locale("en", "US"));
-        String val = nf.format("$"+this);
-
-        return val;
-
-    }
+    
 
     @Override
     public int describeContents() {
