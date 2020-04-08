@@ -97,6 +97,9 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         lbl_RrspContributed.setText("RRSP Carry Forward:\t" + rrspCF);
 
+        //Calculate Total Taxable Income
+
+
 
 
 

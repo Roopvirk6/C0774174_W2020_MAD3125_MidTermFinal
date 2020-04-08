@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         gross_income = (TextInputEditText)findViewById(R.id.editText4);
         rrsp_contribution = (TextInputEditText)findViewById(R.id.editText5);
 
+        //stackoverflow.com
         final DatePickerDialog.OnDateSetListener t_date = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -104,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                 if (Integer.parseInt(age1) < 18) {
                     btn_submit.setAlpha(.5f);
                     btn_submit.setClickable(false);
-                } else
+                }
+                else
                     {
                         Double grossIncome = Double.parseDouble(gross_income.getText().toString());
                         Double rrsp = Double.parseDouble(rrsp_contribution.getText().toString());
