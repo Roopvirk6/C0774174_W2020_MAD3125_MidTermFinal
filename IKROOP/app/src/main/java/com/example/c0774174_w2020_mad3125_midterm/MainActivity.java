@@ -77,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId == R.id.radioButton1){
                     Gender_selected = rb_male.getText().toString();
+                }
+                else if(checkedId == R.id.radioButton2){
+                    Gender_selected  = rb_female.getText().toString();
+                }
+                
 
             }
 
