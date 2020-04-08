@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DataDisplayActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class DataDisplayActivity extends AppCompatActivity {
             lbl_taxableIncome, lbl_taxPaid, lbl_TaxFilingDate;
     double cpp = 0;
     double rrsp = 0;
-    double rrspCf = 0;
+    double rrspCF = 0;
     double totalTaxableAmount;
     double federalTax;
     double provincialTax;
@@ -85,11 +86,13 @@ public class DataDisplayActivity extends AppCompatActivity {
         double maximumRRSP = (grossIncome * 0.18);
         if (rrsp > maximumRRSP)
         {
-
+            Toast.makeText(this,"Amount Exceeding",Toast.LENGTH_SHORT).show();
+            rrspCF = rrsp - maximumRRSP;
+            rrsp = maximumRRSP;
         }
         else
         {
-            
+
         }
 
 
