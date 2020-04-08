@@ -2,6 +2,7 @@ package com.example.c0774174_w2020_mad3125_midterm;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 TextInputEditText edtFname;
  TextInputEditText edtLname;
     String Gender_selected;
-    TextView txt_date;
+    AppCompatAutoCompleteTextView txt_date;
     RadioGroup rgGender;
     RadioButton rb_male;
     RadioButton rb_female;
@@ -49,7 +50,7 @@ TextInputEditText edtFname;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView2 = (TextView)findViewById(R.id.textView2);
-        txt_date= (TextView)findViewById(R.id.txtDate);
+        txt_date= (AppCompatAutoCompleteTextView)findViewById(R.id.txtDate);
         rgGender= (RadioGroup)findViewById(R.id.btnRadioGroup);
         rb_male=(RadioButton)findViewById(R.id.radioButton1);
         rb_female=(RadioButton)findViewById(R.id.radioButton2);
