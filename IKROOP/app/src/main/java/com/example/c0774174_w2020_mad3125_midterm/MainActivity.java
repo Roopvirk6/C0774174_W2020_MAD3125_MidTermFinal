@@ -1,9 +1,11 @@
 package com.example.c0774174_w2020_mad3125_midterm;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +17,11 @@ import android.widget.TextView;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Calendar;
 
 import static com.example.c0774174_w2020_mad3125_midterm.R.id.btnSubmit;
+import static java.time.LocalDate.now;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -116,10 +120,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 }
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private String dateFormat()
     {
         LocalDate l1 = LocalDate.of(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         LocalDate now = LocalDate.now();
+        Period diff = Period.between(l1, now);
 
     }
 
