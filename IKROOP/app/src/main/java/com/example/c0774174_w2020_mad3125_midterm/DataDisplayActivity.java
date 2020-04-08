@@ -117,7 +117,7 @@ public class DataDisplayActivity extends AppCompatActivity {
 
 
     }
-
+    // calculate federal tax function
     public double calculateFederalTax()
     {
         double temp = totalTaxableAmount;
