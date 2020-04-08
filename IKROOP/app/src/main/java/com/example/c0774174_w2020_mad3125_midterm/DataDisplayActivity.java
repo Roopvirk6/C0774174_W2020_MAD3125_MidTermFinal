@@ -120,6 +120,17 @@ public class DataDisplayActivity extends AppCompatActivity {
 
     public double calculateFederalTax()
     {
+        double temp = totalTaxableAmount;
+        if (temp <= 12069.00)
+        {
+            federalTax = 0;
+            temp = totalTaxableAmount - 12069.00;
+        }
+        else if (temp >= 12069.00)
+        {
+            federalTax = (temp * 0.15);
+            temp = temp - 35561;
+        }
 
     }
 
