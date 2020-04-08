@@ -55,5 +55,6 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         double grossIncome = customer.getGross_income();
 
+
     }
 }
