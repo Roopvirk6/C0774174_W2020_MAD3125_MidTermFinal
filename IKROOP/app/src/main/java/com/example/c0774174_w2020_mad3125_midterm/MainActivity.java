@@ -153,10 +153,9 @@ public class MainActivity extends AppCompatActivity {
     {
         String myFormat = "dd-MMM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+        txt_date.setText(sdf.format(calendar.getTime()));
     }
-
-
-
+    
 }
 
 
