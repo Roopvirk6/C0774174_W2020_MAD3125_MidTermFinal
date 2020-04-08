@@ -16,9 +16,11 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.Locale;
 
 import static com.example.c0774174_w2020_mad3125_midterm.R.id.btnSubmit;
 import static java.time.LocalDate.now;
@@ -149,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void dateFormatDOB()
     {
-
+        String myFormat = "dd-MMM-yyyy";
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
     }
 
 
