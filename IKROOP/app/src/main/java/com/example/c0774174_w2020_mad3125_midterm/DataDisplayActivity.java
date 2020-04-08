@@ -71,8 +71,10 @@ public class DataDisplayActivity extends AppCompatActivity {
         }
         else
         {
-
+            emp_Insurance = (grossIncome * 0.0162);
         }
+
+        
 
 
 
