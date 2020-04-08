@@ -53,6 +53,8 @@ public class DataDisplayActivity extends AppCompatActivity {
         lbl_RrspContributed.setText("RRSP Contributed: \t" + customer.getRrsp_contribution());
         rrsp = customer.getRrsp_contribution();
 
+
+        //CPP CALCULATED
         double grossIncome = customer.getGross_income();
         if (grossIncome> 57400.00)
         {
@@ -65,6 +67,7 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         lbl_cpp.setText("CPP Contribution in Year:\t" + cpp);
 
+        //Employee Insurance Calculated
         if (grossIncome > 53100.00)
         {
             emp_Insurance = (53100.00 * 0.0162);
@@ -75,6 +78,13 @@ public class DataDisplayActivity extends AppCompatActivity {
         }
 
         lbl_empInsurance.setText("Employee Insurance in Year:\t" + emp_Insurance);
+
+        //Calculate RRSP
+
+        rrsp = customer.getRrsp_contribution();
+        double maximumRRSP = (grossIncome * 0.18);
+
+
 
 
 
