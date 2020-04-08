@@ -128,9 +128,11 @@ public class MainActivity extends AppCompatActivity {
         LocalDate l1 = LocalDate.of(calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         LocalDate now = LocalDate.now();
         Period diff = Period.between(l1, now);
-        String years=String.valueOf(diff.getYears());
-        String months=String.valueOf(diff.getMonths());
-        String days=String.valueOf(diff.getDays());
+        String years = String.valueOf(diff.getYears());
+        String months = String.valueOf(diff.getMonths());
+        String days = String.valueOf(diff.getDays());
+        age="Age: "+years+"Years"+months+"Months"+days+"Days";
+        return years;
 
     }
 
