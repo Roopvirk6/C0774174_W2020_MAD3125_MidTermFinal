@@ -178,6 +178,11 @@ public class DataDisplayActivity extends AppCompatActivity {
             provincialTax = (temp * 0.1116);
             temp = temp - 62187.99;
         }
+        if (temp >= 150000.01)
+        {
+            provincialTax = (temp * 0.1216);
+            
+        }
 
     }
 
