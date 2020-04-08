@@ -92,8 +92,10 @@ public class DataDisplayActivity extends AppCompatActivity {
         }
         else
         {
-
+            rrsp = rrsp;
         }
+
+        lbl_RrspContributed.setText("RRSP Carry Forward:\t" + rrspCF);
 
 
 
