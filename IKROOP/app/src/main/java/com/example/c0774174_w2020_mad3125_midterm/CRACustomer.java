@@ -18,8 +18,6 @@ public class CRACustomer implements Parcelable {
     double rrsp_contribution;
 
 
-    // G E T T E R   A N D   S E T T E R
-
 
     public static final Creator<CRACustomer> CREATOR = new Creator<CRACustomer>() {
         @Override
