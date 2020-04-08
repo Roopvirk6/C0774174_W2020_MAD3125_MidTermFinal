@@ -120,6 +120,7 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         SimpleDateFormat currentDate = new SimpleDateFormat("dd/MM/yyyy");
         Date todayDate = new Date();
+        String thisDate = currentDate.format(todayDate);
 
 
     }
