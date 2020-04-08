@@ -190,7 +190,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         return provincialTax;
 
     }
-
+    // calculate total tax paid
     public double calculateTaxPaid()
     {
         return totalTaxPaid = federalTax + provincialTax;
