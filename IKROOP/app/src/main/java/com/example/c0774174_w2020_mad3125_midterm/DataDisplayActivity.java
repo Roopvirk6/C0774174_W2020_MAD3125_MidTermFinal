@@ -60,7 +60,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         }
         else
         {
-            
+            cpp = (grossIncome * 0.051);
         }
 
 
