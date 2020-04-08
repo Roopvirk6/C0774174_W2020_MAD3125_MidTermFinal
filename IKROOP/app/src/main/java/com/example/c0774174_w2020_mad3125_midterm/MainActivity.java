@@ -95,9 +95,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn_submit.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 String age1 = dateFormat();
+
                 if (Integer.parseInt(age1) < 18) {
                     btn_submit.setAlpha(.5f);
                     btn_submit.setClickable(false);
