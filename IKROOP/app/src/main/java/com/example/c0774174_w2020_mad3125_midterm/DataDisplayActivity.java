@@ -157,6 +157,7 @@ public class DataDisplayActivity extends AppCompatActivity {
 
     public double calculateProvsional()
     {
+        
 
     }
 
