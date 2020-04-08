@@ -54,6 +54,14 @@ public class DataDisplayActivity extends AppCompatActivity {
         rrsp = customer.getRrsp_contribution();
 
         double grossIncome = customer.getGross_income();
+        if (grossIncome> 57400.00)
+        {
+            cpp = (57400.00 * 0.051);
+        }
+        else
+        {
+            
+        }
 
 
     }
