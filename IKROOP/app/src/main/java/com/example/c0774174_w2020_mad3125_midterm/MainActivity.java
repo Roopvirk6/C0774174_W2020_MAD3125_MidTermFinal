@@ -3,6 +3,7 @@ package com.example.c0774174_w2020_mad3125_midterm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -95,7 +96,17 @@ public class MainActivity extends AppCompatActivity {
                 if (Integer.parseInt(age1) < 18) {
                     btn_submit.setAlpha(.5f);
                     btn_submit.setClickable(false);
-                } else {
+                } else
+                    {
+                        CRACustomer customer = new CRACustomer(edt_sin.getText().toString(),
+                                edtFname.getText().toString(),
+                                edtLname.getText().toString(),
+                                Gender_selected, grossIncome, rrsp, age);
+
+
+                    Intent intent = new Intent(MainActivity.this, DataDisplayActivity.class);
+                    intent.putExtra("User_Data", customer);
+                    startActivity(intent);
 
                 }
             }
