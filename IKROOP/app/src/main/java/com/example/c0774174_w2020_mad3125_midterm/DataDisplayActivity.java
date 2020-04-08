@@ -51,10 +51,10 @@ public class DataDisplayActivity extends AppCompatActivity {
         Intent mIntent = getIntent();
         CRACustomer customer = mIntent.getParcelableExtra("User_Data");
 
-        txt_sin.setText(" SIN: \t" + customer.getSin_number());
-        txt_full_Name.setText(" FULL NAME: \t" + customer.getFull_name());
-        txt_gender.setText(" GENDER: \t" + customer.getGender());
-        txt_gross_income.setText(" GROSS INCOME: \t" + customer.getGross_income());
+        txt_sin.setText(" Personal SIN: \t" + customer.getSin_number());
+        txt_full_Name.setText(" Full Name: \t" + customer.getFull_name());
+        txt_gender.setText(" Gender: \t" + customer.getGender());
+        txt_gross_income.setText(" Gross Income: \t" + customer.getGross_income());
         lbl_RrspContributed.setText("RRSP Contributed: \t" + customer.getRrsp_contribution());
         rrsp = customer.getRrsp_contribution();
 
@@ -122,6 +122,8 @@ public class DataDisplayActivity extends AppCompatActivity {
         Date todayDate = new Date();
         String thisDate = currentDate.format(todayDate);
         lbl_TaxFilingDate.setText("Tax Filing Date: " + thisDate);
+
+
 
 
     }
