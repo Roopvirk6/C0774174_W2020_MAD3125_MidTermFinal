@@ -74,7 +74,7 @@ public class DataDisplayActivity extends AppCompatActivity {
             emp_Insurance = (grossIncome * 0.0162);
         }
 
-        
+        lbl_empInsurance.setText("Employee Insurance in Year:\t" + emp_Insurance);
 
 
 
