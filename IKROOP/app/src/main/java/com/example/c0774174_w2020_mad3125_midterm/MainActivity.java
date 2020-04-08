@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rb_others;
     String age;
     Button btn_submit = (Button)findViewById(btnSubmit);
-    TextView txt_age;
     DatePickerDialog datePickerDialog;
     final Calendar calendar = Calendar.getInstance();
     TextInputEditText edt_sin;
