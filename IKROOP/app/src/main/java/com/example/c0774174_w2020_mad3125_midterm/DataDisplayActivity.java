@@ -45,6 +45,7 @@ public class DataDisplayActivity extends AppCompatActivity {
 
         Intent mIntent = getIntent();
         CRACustomer customer = mIntent.getParcelableExtra("User_Data");
+        
         txt_sin.setText(" SIN: \t" + customer.getSin_number());
         txt_full_Name.setText(" FULL NAME: \t" + customer.getFull_name());
         txt_gender.setText(" GENDER: \t" + customer.getGender());
