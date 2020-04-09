@@ -6,15 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
 
     private final int duration = 3000;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        imageView = (ImageView)findViewById(R.id.imageView);
+        
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         new Handler().postDelayed(new Runnable(){
