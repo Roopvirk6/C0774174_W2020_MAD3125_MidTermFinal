@@ -145,7 +145,10 @@
                 </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
             </com.google.android.material.textfield.TextInputLayout>
 
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
             <RadioGroup
                 android:id="@+id/btnRadioGroup"
                 style="@style/Widget.MaterialComponents.CompoundButton.RadioButton"
@@ -186,6 +189,8 @@
                 tools:layout_editor_absoluteY="447dp" />
 
             </RadioGroup>
+
+            </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSubmit"
