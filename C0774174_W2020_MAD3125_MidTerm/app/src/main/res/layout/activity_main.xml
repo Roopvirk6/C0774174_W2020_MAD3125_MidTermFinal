@@ -140,7 +140,7 @@
                     android:id="@+id/txtDate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Select Date of Birth">
+                    android:hint="@string/Date">
 
                 </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
             </com.google.android.material.textfield.TextInputLayout>
