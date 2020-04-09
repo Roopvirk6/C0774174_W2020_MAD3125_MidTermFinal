@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -18,6 +20,12 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         imageView = (ImageView)findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"C0774174 IKROOP VIRK", Toast.LENGTH_LONG).show();
+            }
+        });
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
