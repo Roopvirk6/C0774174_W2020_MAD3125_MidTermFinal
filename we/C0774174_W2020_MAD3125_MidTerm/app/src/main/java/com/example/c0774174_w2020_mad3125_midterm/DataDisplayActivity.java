@@ -36,7 +36,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_data_display);
         txt_sin = findViewById(R.id.txt_Sin);
         txt_full_Name = findViewById(R.id.txt_fullName);
-        txt_gender = findViewById(R.id.txt_gender);
+       // txt_gender = findViewById(R.id.txt_gender);
         txt_gross_income = findViewById(R.id.txt_grossIncome);
         lbl_RrspContributed = findViewById(R.id.txt_rrspContribution);
         lbl_cpp = findViewById(R.id.txt_Cpp);
