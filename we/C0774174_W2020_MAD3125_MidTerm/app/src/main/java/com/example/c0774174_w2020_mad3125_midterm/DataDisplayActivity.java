@@ -54,7 +54,7 @@ public class DataDisplayActivity extends AppCompatActivity {
         //Log.d("tetsts",customer.getGender().toString());
         txt_sin.setText(" Personal SIN: \t" + customer.getSin_number());
         txt_full_Name.setText(" Full Name: \t" + customer.getFull_name());
-        txt_gender.setText(" Gender: \t" + customer.getGender());
+       // txt_gender.setText(" Gender: \t" + customer.getGender());
 
         txt_gross_income.setText(" Gross Income: \t" + customer.getGross_income());
         lbl_RrspContributed.setText("RRSP Contributed: \t" + customer.getRrsp_contribution());
