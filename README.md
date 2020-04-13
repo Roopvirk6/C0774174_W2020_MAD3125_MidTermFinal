@@ -5,7 +5,7 @@ VARIOUS FOLDERS:
 1)	ACTIVITY: There are three activity files.
 •	Main Activity: It consists of all the main activity required like DatePickerDialog, DateFormatter and formatter for first and last name.
 <img src="https://gifyu.com/image/lEkC" alt="Enter Details" border="0">
-<img src=" https://gifyu.com/image/lEkU" alt="DatePickerDialog for selecting date of birth" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-13-at-11.31.13-AM.png" alt="DatePickerDialog for selecting date of birth" border="0">
 •	Data Display Activity: It consists of the various calculations related to tax like CPP, Employee Insurance, Carry forward RRSP,Tax filling date, Federal tax, Provisional tax and Total tax paid.
 •	Splash Activity: It displays the image and name.
 <img src="https://gifyu.com/image/lEku" alt="SplashScreen" border="0">
