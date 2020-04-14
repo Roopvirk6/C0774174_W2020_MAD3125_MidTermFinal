@@ -14,5 +14,4 @@ VARIOUS FOLDERS:
 •	https://material.io/develop/android/
 <img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-13-at-11.38.14-AM093c4b441ea20874.png" alt="SplashScreen" height="400" width="400" border="0">
 <img src="https://s6.gifyu.com/images/Screen-Shot-2020-04-13-at-11.29.45-AM.png" alt="Enter Details" height="400" width="400" border="0">
-<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-13-at-11.31.13-AM.png" alt="DatePickerDialog for selecting date of birth" height="400" width="400" border="0">
-<img src="https://s6.gifyu.com/images/DATADISPLAY.png" alt="DataDisplay Screen" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-13-at-11.31.13-AM.png" alt="DatePickerDialog for selecting date of birth" height="400" width="400" border="0"> <img src="https://s6.gifyu.com/images/DATADISPLAY.png" alt="DataDisplay Screen" height="400" width="400" border="0">
